@@ -1,0 +1,29 @@
+{
+    "name": "Social_Trust_API",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "babel app.js -d dist",
+        "start": "nodemon app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.6.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.13.9",
+        "morgan": "^1.10.0",
+        "nanoid": "^3.1.25",
+        "neo4j-driver": "*",
+        "nodemon": "^2.0.14"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.15.4",
+        "@babel/core": "^7.15.5",
+        "@babel/preset-env": "^7.15.6"
+    }
+}
