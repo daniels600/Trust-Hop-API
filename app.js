@@ -8,8 +8,6 @@ const user = require('./src/routes/user');
 
 require('dotenv/config');
 
-const PORT = 5000;
-
 const app = express();
 
 var urlencoded_body_parser = bodyParser.urlencoded({
@@ -36,11 +34,10 @@ app.use('/', user);
 //Routes 
 app.get("/", (req, res) => {
     //sending a user a response 
-    res.send("Hello from Homepage!");
+    res.send("Hello!, you have reached the TrustHop API endpoint");
 });
 
 
 
-
 //Listening 
-app.listen(process.env.PORT, () => { console.log(`Listening to PORT ${PORT}`); })
+app.listen(process.env.PORT, () => { console.log(`Listening to PORT ${process.env.PORT}`); })
